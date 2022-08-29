@@ -34,12 +34,24 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+-- Delete buffer
+keymap("n", "<leader>x", ":Bdelete!<CR>", opts)
 
 -- Move text up and down
 -- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 -- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "<A-j>", ":m+1<CR>", opts)
 keymap("n", "<A-k>", ":m-2<CR>", opts)
+
+-- duplicate current line
+keymap("n", "<C-j>", ":t .<CR>", opts)
+
+-- select word
+keymap("n", "<C-d>", "viw", opts)
+
+-- Jump to beginning or end of line.
+keymap("n", "<C-b>", "<ESC>^i", opts)
+keymap("n", "<C-e>", "<ESC>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode
@@ -49,6 +61,8 @@ keymap("i", "jk", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+keymap("v", "<S-Tab>", "<gv", opts)
+keymap("v", "<Tab>", ">gv", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
