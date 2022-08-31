@@ -44,7 +44,8 @@ keymap("n", "<A-j>", ":m+1<CR>", opts)
 keymap("n", "<A-k>", ":m-2<CR>", opts)
 
 -- duplicate current line
-keymap("n", "<C-j>", ":t .<CR>", opts)
+--[[ keymap("n", "<C-j>", ":t .<CR>", opts) ]]
+keymap("v", "<C-j>", ":'<,'>t'> .<CR>", opts)
 
 -- select word
 keymap("n", "<C-d>", "viw", opts)
