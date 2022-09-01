@@ -44,15 +44,17 @@ keymap("n", "<A-j>", ":m+1<CR>", opts)
 keymap("n", "<A-k>", ":m-2<CR>", opts)
 
 -- duplicate current line
---[[ keymap("n", "<C-j>", ":t .<CR>", opts) ]]
+keymap("n", "<C-j>", ":t .<CR>", opts)
 keymap("v", "<C-j>", ":'<,'>t'> .<CR>", opts)
 
 -- select word
 keymap("n", "<C-d>", "viw", opts)
 
 -- Jump to beginning or end of line.
-keymap("n", "<C-b>", "<ESC>^i", opts)
-keymap("n", "<C-e>", "<ESC>", opts)
+-- keymap("n", "<C-b>", "<ESC>^i", opts)
+-- keymap("n", "<C-e>", "<ESC>", opts)
+keymap("n", "<C-b>", "<Home>", opts)
+keymap("n", "<C-e>", "<End>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode

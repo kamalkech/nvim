@@ -117,10 +117,10 @@ M.on_attach = function(client, bufnr)
 	-- vim.notify(client.name .. " starting...")
 	-- TODO: refactor this into a method that checks if string in list
 	-- if client.name == "tsserver" then
-	--   client.resolved_capabilities.document_formatting = false
+		-- client.resolved_capabilities.document_formatting = false
 	-- end
 
-	-- reformat after save
+  	-- reformat after save
 	if client.supports_method("textDocument/formatting") then
 		vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
 		vim.api.nvim_create_autocmd("BufWritePre", {

@@ -1,3 +1,11 @@
+-- vim.cmd [[
+-- try
+--   colorscheme darkplus
+-- catch /^Vim\%((\a\+)\)\=:E185/
+--   colorscheme default
+--   set background=dark
+-- endtry
+-- ]]
 vim.g.tokyonight_transparent = true
 vim.g.tokyonight_transparent_sidebar = true
 
