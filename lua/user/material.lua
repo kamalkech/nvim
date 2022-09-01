@@ -10,4 +10,3 @@ vim.g.material_style = "deep ocean"
 -- endtry
 -- ]])
 vim.cmd 'colorscheme material'
-
