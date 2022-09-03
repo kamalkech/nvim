@@ -4,3 +4,7 @@
 - cw          : delete part or word then insert mode
 - daw         : delete word
 - caw         : delete word then insert mode
+- f(letter)   : in current line jump to letter
+- t(letter)   : in current line jump to before letter
+- vf) or vt)  : select text between ()
+- vf] or vt]  : select text between []
