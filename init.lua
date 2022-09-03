@@ -2,8 +2,8 @@ require("user.options")
 require("user.keymaps")
 require("user.plugins")
 
--- require("user.colorscheme")
-require("user.onedark")
+require("user.colorscheme")
+-- require("user.onedark")
 -- require("user.material")
 
 require("user.cmp")

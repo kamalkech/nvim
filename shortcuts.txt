@@ -1,0 +1,6 @@
+- ca' or ca"  : to remove text between single or double quotes
+- ci' or ci"  : to remove text between single or double quotes then insert mode
+- dw          : delete part or word
+- cw          : delete part or word then insert mode
+- daw         : delete word
+- caw         : delete word then insert mode

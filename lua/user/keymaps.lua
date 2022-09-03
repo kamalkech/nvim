@@ -49,6 +49,8 @@ keymap("v", "<C-j>", ":'<,'>t'> .<CR>", opts)
 
 -- select word
 keymap("n", "<C-d>", "viw", opts)
+keymap("n", "<leader>vf", "vi{", opts)
+keymap("n", "<leader>vfa", "va{V", opts)
 
 -- Jump to beginning or end of line.
 -- keymap("n", "<C-b>", "<ESC>^i", opts)
