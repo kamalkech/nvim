@@ -8,3 +8,6 @@
 - t(letter)   : in current line jump to before letter
 - vf) or vt)  : select text between ()
 - vf] or vt]  : select text between []
+- vi) or vi)  : select text between ()
+- diw or ciw  : delete word withing cursor
+

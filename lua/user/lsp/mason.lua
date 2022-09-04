@@ -77,6 +77,11 @@ if not lspconfig_status_ok then
 	return
 end
 
+lspconfig.emmet_ls.setup({
+	-- capabilities = capabilities
+	filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
+})
+
 for _, server in pairs(servers) do
 	local opts = {
 		on_attach = require("user.lsp.handlers").on_attach,
