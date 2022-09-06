@@ -10,4 +10,5 @@
 - vf] or vt]  : select text between []
 - vi) or vi)  : select text between ()
 - diw or ciw  : delete word withing cursor
-
+- mt or mv    : when tap 't jump to mt position, when tap 'v jump to mv position
+- ctrl-w-o    : close all except current buffer
