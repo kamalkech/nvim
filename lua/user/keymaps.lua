@@ -122,3 +122,8 @@ keymap("x", "<a-k>", ":move '<-2<cr>gv-gv", opts)
 
 keymap("n", "<C-s>", ":w<CR>", opts)
 keymap("v", "<C-s>", ":w<CR>", opts)
+
+-- Code action
+keymap("i", "<C-.>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
+keymap("n", "<leader>.", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
+-- vim.keymap.set({ "n", "i" }, "<C-.>", "<cmd>lua vim.lsp.buf.code_action()<cr>")

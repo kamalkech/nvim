@@ -30,7 +30,7 @@ local servers = {
 
   -- mardown
   "sumneko_lua",
-  "stylua",
+  -- "stylua",
 
   -- mardown
   -- "marksman",
