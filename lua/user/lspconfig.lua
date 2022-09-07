@@ -1,27 +1,32 @@
-local status_ok, mason = pcall(require, "mason")
-if not status_ok then
+local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_status_ok then
   return
 end
 
-local status_ok_1, mason_lspconfig = pcall(require, "mason-lspconfig")
-if not status_ok_1 then
+local mason_status_ok, mason = pcall(require, "mason")
+if not mason_status_ok then
+  return
+end
+
+local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
+if not mason_lspconfig_status_ok then
   return
 end
 
 local servers = {
-  -- "angularls",
-  -- "astro",
-  -- "cssls",
-  -- "cssmodules_ls",
-  -- "dockerls",
-  -- "dotls",
+  "angularls",
+  "astro",
+  "cssls",
+  "cssmodules_ls",
+  "dockerls",
+  "dotls",
   "eslint",
   "emmet_ls",
-  -- "graphql",
-  -- "html",
-  -- "jsonls",
-  -- "quick_lint_js",
-  -- "tsserver",
+  "graphql",
+  "html",
+  "jsonls",
+  "quick_lint_js",
+  "tsserver",
 
   -- mardown
   "sumneko_lua",
@@ -47,13 +52,13 @@ local servers = {
   -- "solang",
   -- "solc",
 
-  -- "stylelint_lsp",
+  "stylelint_lsp",
   "svelte",
   -- "taplo",
-  -- "tailwindcss",
-  -- "volar",
-  -- "vuels",
-  -- "yamlls",
+  "tailwindcss",
+  "volar",
+  "vuels",
+  "yamlls",
 }
 
 local settings = {
@@ -75,15 +80,10 @@ mason_lspconfig.setup({
   automatic_installation = true,
 })
 
-local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
-if not lspconfig_status_ok then
-  return
-end
-
--- lspconfig.emmet_ls.setup({
---   -- capabilities = capabilities
---   filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
--- })
+lspconfig.emmet_ls.setup({
+  -- capabilities = capabilities
+  filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
+})
 
 for _, server in pairs(servers) do
   local opts = {
@@ -96,3 +96,6 @@ for _, server in pairs(servers) do
   end
   lspconfig[server].setup(opts)
 end
+
+
+require "user.lsp.null-ls"
