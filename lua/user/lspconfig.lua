@@ -14,19 +14,19 @@ if not mason_lspconfig_status_ok then
 end
 
 local servers = {
-  "angularls",
-  "astro",
-  "cssls",
-  "cssmodules_ls",
-  "dockerls",
-  "dotls",
+  -- "angularls",
+  -- "astro",
+  -- "cssls",
+  -- "cssmodules_ls",
+  -- "dockerls",
+  -- "dotls",
   "eslint",
   "emmet_ls",
-  "graphql",
-  "html",
-  "jsonls",
-  "quick_lint_js",
-  "tsserver",
+  -- "graphql",
+  -- "html",
+  -- "jsonls",
+  -- "quick_lint_js",
+  -- "tsserver",
 
   -- mardown
   "sumneko_lua",
@@ -43,22 +43,22 @@ local servers = {
   -- "phpactor",
   -- "psalm",
 
-  "prismals",
+  -- "prismals",
   "rust_analyzer",
-  "sqlls",
+  -- "sqlls",
   -- "sqls",
 
   -- solidity
   -- "solang",
   -- "solc",
 
-  "stylelint_lsp",
-  "svelte",
+  -- "stylelint_lsp",
+  -- "svelte",
   -- "taplo",
-  "tailwindcss",
-  "volar",
-  "vuels",
-  "yamlls",
+  -- "tailwindcss",
+  -- "volar",
+  -- "vuels",
+  -- "yamlls",
 }
 
 local settings = {
