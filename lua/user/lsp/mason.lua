@@ -21,7 +21,7 @@ local servers = {
   -- "html",
   -- "jsonls",
   -- "quick_lint_js",
-  -- "tsserver",
+  "tsserver",
 
   -- mardown
   "sumneko_lua",
@@ -80,10 +80,10 @@ if not lspconfig_status_ok then
   return
 end
 
--- lspconfig.emmet_ls.setup({
---   -- capabilities = capabilities
---   filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
--- })
+lspconfig.emmet_ls.setup({
+  -- capabilities = capabilities
+  filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
+})
 
 for _, server in pairs(servers) do
   local opts = {
