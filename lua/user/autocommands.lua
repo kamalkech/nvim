@@ -19,6 +19,15 @@ vim.api.nvim_create_autocmd({ "User" }, {
     ]])
   end,
 })
+vim.api.nvim_create_autocmd({ "User" }, {
+  pattern = { "AlphaReady" },
+  callback = function()
+    vim.cmd([[
+      set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
+      set laststatus=0 | autocmd BufUnload <buffer> set laststatus=3
+    ]])
+  end,
+})
 
 -- Set wrap and spell in markdown and gitcommit
 vim.api.nvim_create_autocmd({ "FileType" }, {
@@ -44,5 +53,24 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   callback = function()
     vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
+  end,
+})
+
+-- make background transparent
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = function()
+    local hl_groups = {
+      "Normal",
+      "SignColumn",
+      "NormalNC",
+      "TelescopeBorder",
+      "NvimTreeNormal",
+      "EndOfBuffer",
+      "MsgArea",
+    }
+    for _, name in ipairs(hl_groups) do
+      vim.cmd(string.format("highlight %s ctermbg=none guibg=none", name))
+    end
   end,
 })
