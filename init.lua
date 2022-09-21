@@ -33,3 +33,6 @@ require("user.lsp")
 require("user.dap")
 require("user.whichkey")
 require("user.ufo")
+
+-- languages.
+-- require("user.rust-tools")
