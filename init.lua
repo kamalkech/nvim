@@ -6,6 +6,7 @@ require("user.plugins")
 -- require("user.ftdetect.astro")
 require("user.autocommands")
 
+-- Theme
 -- require("user.colorscheme")
 -- require("user.onedark")
 -- require("user.material")
@@ -36,3 +37,5 @@ require("user.ufo")
 
 -- languages.
 -- require("user.rust-tools")
+
+require("user.neovide")
