@@ -7,9 +7,9 @@ require("user.plugins")
 require("user.autocommands")
 
 -- Theme
-require("user.colorscheme")
+-- require("user.colorscheme")
 -- require("user.onedark")
--- require("user.material")
+require("user.material")
 -- require("user.dracula")
 
 require("user.cmp")

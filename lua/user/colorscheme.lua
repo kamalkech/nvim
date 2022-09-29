@@ -4,7 +4,8 @@
 -- vim.g.tokyonight_transparent_sidebar = true
 
 -- local colorscheme = "onedark"
-local colorscheme = "ayu"
+-- local colorscheme = "ayu"
+local colorscheme = "gruvbox"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
