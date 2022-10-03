@@ -56,7 +56,6 @@ local servers = {
 	-- "yamlls",
 
 	-- go lang
-	"asm_lsp",
 	"golangci_lint_ls",
 	"gopls",
 }

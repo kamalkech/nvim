@@ -9,8 +9,12 @@ require("user.autocommands")
 -- Theme
 -- require("user.colorscheme")
 -- require("user.onedark")
-require("user.material")
+-- require("user.material")
 -- require("user.dracula")
+-- require("user.tokyodark")
+-- require("user.everforest")
+-- require("user.themes.tender")
+require("user.themes.nightfox")
 
 require("user.cmp")
 require("user.telescope")
