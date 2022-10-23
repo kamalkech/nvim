@@ -1,0 +1,7 @@
+put sth at the top of your lsp config file
+like
+print("hi")
+to see if this is loaded multiple times
+or perhaps try to make a minimal config with only typescript lsp so you can open an issue there (because that's what it seems like to me)
+also
+perhaps look at lsp log to see what caused this mess

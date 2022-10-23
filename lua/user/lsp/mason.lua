@@ -15,7 +15,7 @@ local servers = {
 	-- "cssmodules_ls",
 	-- "dockerls",
 	-- "dotls",
-	"eslint",
+	-- "eslint",
 	"emmet_ls",
 	-- "graphql",
 	-- "html",
@@ -86,7 +86,7 @@ end
 
 lspconfig.emmet_ls.setup({
 	-- capabilities = capabilities
-	filetypes = { "html", "typescriptreact", "javascriptreact", "svelte" },
+	filetypes = { "html", "typescriptreact", "javascriptreact", "svelte", "twigcs" },
 })
 
 for _, server in pairs(servers) do

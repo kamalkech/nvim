@@ -32,4 +32,5 @@ require("nightfox").setup({
 })
 
 -- setup must be called before loading
+-- nightfox - dayfox - dawnfox - duskfox - nordfox - terafox - carbonfox
 vim.cmd("colorscheme nightfox")
